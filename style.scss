@@ -12,26 +12,244 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid red;
-}
-
-body {
-    color: var(--background-black);
-    padding-left: 80px;
-    padding-right: 80px;
-    background-color: var(--background-black);
+    font-family: sans-serif;
 }
 
 :root {
-    --background-black: #191919;
+    --black: #191919;
     --white: #fff;
     --gray: #ffffff1a;
     --light-gray: #ffffff7f;
-    --yellow-text: #C9AC8C;
+    --white-gray: #404040;
+    --red: #f00;
+    --green: lawngreen;
+    --cream: #C9AC8C;
+    --text-gray: rgba(255, 255, 255, 0.30);
+    --brown: #3C2710;
+}
+
+
+body {
+    color: var(--black);
+    background-color: var(--black);
+}
+
+body {
+    width: 100%;
+    height: fit-content;
+    background: var(--black);
+    background-image: url(imgs/ornament.png);
+    background-repeat: no-repeat;
+    background-position: right 260px;
+}
+
+.nav-fixed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid var(--gray) 2px;
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    padding: 0px 100px;
+    background: var(--black);
+
+    .nav-logo {
+        font-size: 2rem;
+        text-transform: capitalize;
+        user-select: none;
+        cursor: pointer;
+
+        a {
+            color: var(--cream);
+            text-decoration: none;
+            font-family: Rotterburg Stylish FREE;
+        }
+    }
+
+    .ul-desktop {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin-left: 200px;
+
+        li {
+            display: flex;
+            align-items: center;
+            // border: solid red;
+            padding: 30px 20px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+
+            &:hover a {
+                color: var(--white);
+                transform: scale(1.2);
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                border-radius: 10px;
+                background: var(--white);
+                left: 0;
+                bottom: -8px;
+                transition: .5s;
+            }
+
+            &:hover::before {
+                bottom: 0px;
+            }
+
+            a {
+                color: var(--light-gray);
+                text-decoration: none;
+                transition: .5s;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .profile {
+        background-size: cover;
+        cursor: pointer;
+        display: flex;
+        user-select: none;
+
+        button {
+            padding: 5px 15px;
+            margin-right: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 2px 3px red;
+            border: none;
+            outline: none;
+            color: red;
+            background: var(--black);
+            cursor: pointer;
+        }
+
+        .log {
+            box-shadow: 0 0 2px 3px var(--green);
+            color: var(--green);
+        }
+    }
+
+    .gamburger-menu {
+        display: none;
+        position: relative;
+        width: 30px;
+        height: 4px;
+        background: var(--white);
+        border-radius: 5px;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 4px;
+            position: absolute;
+            left: 0;
+            top: -7px;
+            background: var(--white);
+            border-radius: 5px;
+        }
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 4px;
+            position: absolute;
+            left: 0;
+            top: 7px;
+            background: var(--white);
+            border-radius: 5px;
+        }
+    }
+}
+
+
+header {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    padding-top: 130px;
+    flex-direction: column;
+    align-items: center;
+
+    .slider {
+        width: 80%;
+        height: 340px;
+        background-image: url(imgs/Group\ 2.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    .search-bar {
+        width: 900px;
+        height: 160px;
+        background: var(--black);
+        transform: translateY(-50px);
+        display: flex;
+        border-radius: 30px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: solid var(--white-gray) 1px;
+
+        h1 {
+            color: var(--cream);
+            margin-bottom: 20px;
+            font-family: Rotterburg Stylish FREE;
+        }
+
+        .s-bottom {
+            .search-inp {
+                width: 670px;
+                background: var(--white-gray);
+                padding: 10px 30px;
+                outline: none;
+                border: none;
+                border-radius: 15px;
+                font-size: 19px;
+                color: var(--text-gray);
+                transition: .5s;
+
+                &:focus {
+                    color: var(--white);
+                }
+
+                &::placeholder {
+                    transition: 0.5s;
+                }
+
+                &:focus::placeholder {
+                    color: var(--white);
+                }
+            }
+
+            button {
+                padding: 10px 30px 10px 50px;
+                background: var(--cream);
+                outline: none;
+                border: none;
+                border-radius: 15px;
+                font-size: 19px;
+                background-image: url(imgs/Frame.png);
+                background-repeat: no-repeat;
+                background-size: 30px;
+                background-position: 12px center;
+                cursor: pointer;
+                color: var(--brown);
+            }
+        }
+    }
 }
 
 .main-books {
     margin-top: 30px;
+    padding: 0 120px;
 
     .top {
         h1 {
@@ -63,8 +281,8 @@ body {
             }
 
             .card-bottom {
-                h2{
-                    color: var(--yellow-text);
+                h2 {
+                    color: var(--cream);
                     font-family: Rotterburg Stylish FREE;
                     font-size: 20px;
                     font-weight: 400;
