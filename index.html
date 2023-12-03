@@ -4,14 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">hello</a></li>
-            <li><a href="#">mother</a></li>
-            <li><a href="#">fother</a></li>
+    <nav class="nav-fixed">
+        <div class="nav-logo">
+            <a href="#">badiiyat</a>
+        </div>
+        <ul class="ul-desktop">
+            <li><a href="#">Bosh sahifa</a></li>
+            <li><a href="#">Nasr</a></li>
+            <li><a href="#">Kitoblar</a></li>
+            <li><a href="#">Maqolalar</a></li>
+            <li><a href="#">Mualliflar</a></li>
+            <li><a href="#">Forum</a></li>
         </ul>
+        <div class="profile">
+            <button class="log">Log in</button>
+            <button class="sign">Sign up</button>
+        </div>
+        <div class="gamburger-menu"></div>
     </nav>
+
+    <header>
+        <div class="slider"></div>
+        <div class="search-bar">
+            <h1>Qidirish</h1>
+            <div class="s-bottom">
+                <input class="search-inp" placeholder="Adiblar, kitoblar, audiolar, maqolalar..." type="search" required>
+                <button type="submit">Izlash</button>
+            </div>
+        </div>
+    </header>
 </body>
 </html>

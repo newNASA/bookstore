@@ -1,1 +1,215 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --black: #191919;
+  --white: #fff;
+  --gray: #ffffff1a;
+  --light-gray: #ffffff7f;
+  --white-gray: #404040;
+  --red: #f00;
+  --green: lawngreen;
+  --cream: #C9AC8C;
+  --text-gray: rgba(255, 255, 255, 0.30);
+  --brown: #3C2710;
+}
+
+body {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: var(--black);
+  background-image: url(assets/img/ornament.png);
+  background-repeat: no-repeat;
+  background-position: right 260px;
+}
+
+.nav-fixed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid var(--gray) 2px;
+  position: fixed;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0px 100px;
+}
+.nav-fixed .nav-logo {
+  font-size: 2rem;
+  text-transform: capitalize;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.nav-fixed .nav-logo a {
+  color: var(--cream);
+  text-decoration: none;
+}
+.nav-fixed .ul-desktop {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-left: 200px;
+}
+.nav-fixed .ul-desktop li {
+  display: flex;
+  align-items: center;
+  padding: 30px 20px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.nav-fixed .ul-desktop li:hover a {
+  color: var(--white);
+  transform: scale(1.2);
+}
+.nav-fixed .ul-desktop li::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background: var(--white);
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.nav-fixed .ul-desktop li:hover::before {
+  bottom: 0px;
+}
+.nav-fixed .ul-desktop li a {
+  color: var(--light-gray);
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 1.2rem;
+}
+.nav-fixed .profile {
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.nav-fixed .profile button {
+  padding: 5px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 3px red;
+  border: none;
+  outline: none;
+  color: red;
+  background: var(--black);
+  cursor: pointer;
+}
+.nav-fixed .profile .log {
+  box-shadow: 0 0 2px 3px var(--green);
+  color: var(--green);
+}
+.nav-fixed .gamburger-menu {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 4px;
+  background: var(--white);
+  border-radius: 5px;
+}
+.nav-fixed .gamburger-menu::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: -7px;
+  background: var(--white);
+  border-radius: 5px;
+}
+.nav-fixed .gamburger-menu::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: 7px;
+  background: var(--white);
+  border-radius: 5px;
+}
+
+header {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  padding-top: 130px;
+  flex-direction: column;
+  align-items: center;
+}
+header .slider {
+  width: 80%;
+  height: 340px;
+  background-image: url(assets/img/Group\ 2.png);
+  background-size: 100%;
+}
+header .search-bar {
+  width: 900px;
+  height: 160px;
+  background: var(--black);
+  transform: translateY(-50px);
+  display: flex;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: solid var(--white-gray) 1px;
+}
+header .search-bar h1 {
+  color: var(--cream);
+  margin-bottom: 20px;
+}
+header .search-bar .s-bottom .search-inp {
+  width: 670px;
+  background: var(--white-gray);
+  padding: 10px 30px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  font-size: 19px;
+  color: var(--text-gray);
+  transition: 0.5s;
+}
+header .search-bar .s-bottom .search-inp:focus {
+  color: var(--white);
+}
+header .search-bar .s-bottom .search-inp::-moz-placeholder {
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+header .search-bar .s-bottom .search-inp::placeholder {
+  transition: 0.5s;
+}
+header .search-bar .s-bottom .search-inp:focus::-moz-placeholder {
+  color: var(--white);
+}
+header .search-bar .s-bottom .search-inp:focus::placeholder {
+  color: var(--white);
+}
+header .search-bar .s-bottom button {
+  padding: 10px 30px 10px 50px;
+  background: var(--cream);
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  font-size: 19px;
+  background-image: url(assets/img/Frame.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 12px center;
+  cursor: pointer;
+  color: var(--brown);
+}/*# sourceMappingURL=style.css.map */
