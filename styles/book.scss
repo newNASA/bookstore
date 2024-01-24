@@ -1,0 +1,513 @@
+@import url(../style.css);
+
+// book page styles
+.book {
+  // margin-top: 57.5px;
+  display: flex;
+  padding-left: 80px;
+  padding-right: 80px;
+
+  .left {
+    padding-right: 46px;
+
+    .img {
+      border-radius: 15px;
+    }
+  }
+
+  .right {
+    width: 100%;
+
+    h1 {
+      color: var(--cream);
+      font-family: Rotterburg Stylish FREE;
+      font-size: 48px;
+      font-weight: 400;
+    }
+
+    .book-author-rate {
+      display: flex;
+      align-items: center;
+      margin-top: 13.5px;
+
+      .author-name {
+        color: var(--cream);
+        font-family: Steinbeck;
+        font-weight: 400;
+      }
+
+      span {
+        margin-top: 6px;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: var(--white);
+        font-family: Visuelt Pro;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 144.4%;
+      }
+
+      img {
+        margin-top: 2px;
+      }
+
+      .rate {
+        color: var(--light-gray);
+        font-family: Visuelt Pro;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 144.4%;
+        margin-top: 5px;
+        margin-left: 7px;
+      }
+    }
+
+    .book-info {
+      display: flex;
+      flex-direction: column;
+      margin-top: 40.5px;
+      gap: 15px;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        p {
+          color: var(--light-gray);
+          font-family: Steinbeck;
+          font-size: 20px;
+          font-weight: 400;
+        }
+
+        span {
+          color: var(--white);
+          font-family: Steinbeck;
+          font-size: 20px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .full-info {
+      margin-top: 48px;
+
+      .top {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p {
+          color: var(--cream);
+          font-family: Steinbeck;
+          font-weight: 400;
+        }
+
+        img {
+          margin-top: 3px;
+        }
+
+        .hr {
+          width: 82%;
+          height: 1px;
+          background-color: var(--cream);
+        }
+      }
+
+      .bottom {
+        padding: 10px;
+
+        p {
+          color: var(--author-p);
+          font-family: Steinbeck;
+          font-weight: 400;
+          line-height: 144.4%;
+        }
+      }
+    }
+
+    .formats {
+      margin-top: 47px;
+
+      .top {
+        p {
+          color: var(--cream);
+          font-family: Steinbeck;
+          font-weight: 400;
+        }
+      }
+
+      .bottom {
+        margin-top: 28px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .one {
+          display: flex;
+          gap: 26px;
+
+          div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+
+            img {
+              width: 24px;
+              height: 24px;
+            }
+
+            p {
+              color: var(--white);
+              font-family: Steinbeck;
+              font-weight: 400;
+            }
+
+            span {
+              color: var(--light-gray);
+              font-family: Steinbeck;
+              font-size: 16px;
+              font-weight: 400;
+            }
+          }
+        }
+
+        .two {
+          button {
+            outline: none;
+            border: none;
+            padding: 16px 32px;
+            background: var(--cream);
+            color: var(--brown);
+            font-family: Steinbeck;
+            font-size: 16px;
+            font-weight: 400;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.kitob-haqida {
+  padding-left: 80px;
+  margin-top: 65px;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 80px;
+
+    ul {
+      display: flex;
+      gap: 49px;
+
+      li {
+        color: var(--light-gray);
+        font-family: Steinbeck;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+        user-select: none;
+        transition: 0.5s;
+
+        a {
+          color: var(--light-gray);
+
+          &:hover {
+            color: var(--cream);
+          }
+        }
+
+        &:hover {
+          color: var(--cream);
+          transform: scale(1.1);
+        }
+
+        &:nth-child(2) {
+          color: var(--cream);
+        }
+      }
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: none;
+      border: none;
+      padding: 10px;
+      border-radius: 15px;
+      cursor: pointer;
+      background-color: var(--cream);
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .bottom {
+    margin-top: 50px;
+
+    .iqtibos {
+      display: flex;
+      gap: 30px;
+      overflow-x: scroll;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .card {
+        position: relative;
+        background: url(.../imgs/book\ card\ ornament.png) no-repeat bottom -50px right, var(--book-iqtibos-card-gradient);
+        display: flex;
+        border-radius: 15px;
+        min-width: 800px;
+        width: fit-content;
+
+        .card-left {
+          width: 85%;
+          display: flex;
+          flex-direction: column;
+          padding: 35px 40px;
+
+          .book-bottom {
+            margin-top: 10px;
+
+            p {
+              color: #FFF;
+              font-family: Steinbeck;
+              font-weight: 400;
+            }
+          }
+        }
+
+        .card-right {
+          width: 15%;
+        }
+      }
+    }
+
+    .taqriz {
+      display: none;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding-right: 80px;
+      justify-content: space-between;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .card {
+        background: url(.../imgs/book\ card\ ornament.png) no-repeat bottom -50px right, var(--book-iqtibos-card-gradient);
+        display: flex;
+        border-radius: 15px;
+        width: 48%;
+
+        .card-left {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          padding: 35px 40px;
+
+          .book-top {
+            h2 {
+              color: var(--cream);
+              font-family: Steinbeck;
+              font-size: 20px;
+              font-weight: 400;
+            }
+          }
+
+          .book-bottom {
+            margin-top: 10px;
+
+            p {
+              color: #FFF;
+              font-family: Steinbeck;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.kitob-tavsiya {
+  margin-top: 50px;
+
+  .top {
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      color: var(--cream);
+      font-family: Steinbeck;
+      font-size: 25px;
+      font-weight: 400;
+    }
+
+    button {
+      background-color: transparent;
+      outline: none;
+      border: none;
+      color: var(--white);
+      font-family: Steinbeck;
+      font-size: 25px;
+      font-weight: 400;
+      cursor: pointer;
+    }
+  }
+
+  .kt_notscroll {
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    padding-right: 80px;
+    justify-content: center;
+
+  }
+
+  .bottom {
+    width: 100%;
+    margin-top: 66px;
+    padding-left: 80px;
+    display: flex;
+    width: 100%;
+    gap: 41.5px;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .card {
+      width: 170px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .card-top {
+        width: 164.152px;
+        height: 246.228px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 15px;
+          background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+        }
+      }
+
+      .card-bottom {
+        h2 {
+          color: var(--cream);
+          font-family: Rotterburg Stylish FREE;
+          font-size: 20px;
+          font-weight: 400;
+          margin-top: 17px;
+        }
+
+        span {
+          font-family: Visuelt Pro;
+          font-size: 12px;
+          color: var(--light-gray);
+          font-weight: 300;
+          line-height: 144.4%;
+          margin-top: 1.3px;
+        }
+
+        div {
+          display: inline-flex;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 7px;
+          margin-top: 3.8px;
+
+          h3 {
+            color: var(--light-gray);
+            font-family: Visuelt Pro;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 144.4%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.comment {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  backdrop-filter: blur(15px);
+  width: 100%;
+  height: 100vh;
+
+  .container {
+    border: 1px solid var(--light-gray);
+    border-radius: 15px;
+    padding: 30px;
+    width: 700px;
+    background-color: var(--black);
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      img{
+        cursor: pointer;
+      }
+      h2 {
+        color: var(--cream);
+        font-family: Rotterburg Stylish FREE;
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+    .bottom{
+      margin-top: 15px;
+      form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        textarea{
+          width: 100%;
+          outline: none;
+          border: 1px solid var(--light-gray);
+          border-radius: 15px;
+          height: 200px;
+          background-color: transparent;
+          padding: 15px;
+          font-family: Steinbeck;
+          color: var(--white);
+          resize: none;
+        }
+        input{
+          display: flex;
+          justify-content: center;
+          border-radius: 15px ;
+          margin-top: 15px;
+          cursor: pointer;
+          padding: 10px 30px;
+          outline: none;
+          border: none;
+          background-color: var(--cream);
+        }
+      }
+    }
+  }
+}

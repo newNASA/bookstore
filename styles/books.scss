@@ -1,0 +1,47 @@
+@import url(../style.css);
+
+.books {
+  .top {
+    select{
+      display: none;
+      outline: none;
+      border-radius: 10px;
+      background-color: var(--cream);
+      color: var(--brown);
+      border: none;
+      padding: 10px;
+    }
+    .category {
+      margin-top: 30px;
+      width: 100%;
+
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        li {
+          display: inline-block;
+
+          button {
+            outline: none;
+            border: none;
+            background-color: transparent;
+            color: var(--light-gray);
+            font-family: Steinbeck;
+            font-size: 20px;
+            font-weight: 400;
+            cursor: pointer;
+            transition: .5s;
+
+            &:hover {
+              color: var(--cream);
+              transform: scale(1.2) translateY(-2px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

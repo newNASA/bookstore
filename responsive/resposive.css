@@ -1,0 +1,266 @@
+@import url(../style.css);
+@media screen and (max-width: 1536px) {
+  .main-books .bottom .card-13,
+  .main-books .bottom .card-14 {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-fixed {
+    padding: 0 60px;
+    height: 85px;
+  }
+  .nav-fixed .ul-desktop {
+    display: none;
+  }
+  .nav-fixed .profile {
+    display: none;
+  }
+  .nav-fixed .gamburger-menu {
+    display: flex;
+  }
+  header .slider {
+    width: 100%;
+    height: 220px;
+    border-radius: 0;
+    background-size: 103%;
+    justify-content: center;
+  }
+  header .slider .img {
+    display: flex;
+  }
+  header .slider .slider-text {
+    width: 220px;
+    left: 60px;
+  }
+  header .slider .slider-text h1 {
+    font-size: 2.2rem;
+  }
+  header .slider .slider-text .slide-btn div {
+    width: 45px;
+  }
+  header .search-bar {
+    width: 550px;
+    height: 100px;
+    justify-content: space-evenly;
+    transform: translateY(-40px);
+  }
+  header .search-bar h1 {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  header .search-bar .s-bottom .search-inp {
+    width: 400px;
+    padding: 5px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+  header .search-bar .s-bottom button {
+    padding: 4px 20px 4px 30px;
+    background-size: 18px;
+    border-radius: 10px;
+    background-position: 10px 9px;
+  }
+  .main-books {
+    margin-top: 0px;
+    padding: 0 92px;
+  }
+}
+@media screen and (max-width: 426px) {
+  nav {
+    padding-inline: 20px !important;
+  }
+  nav .nav-logo a {
+    font-size: 1.5rem;
+  }
+  .compony-info .container {
+    flex-direction: column;
+  }
+  header .slider {
+    width: 90% !important;
+    height: 200px;
+    border-radius: 21px;
+  }
+  header .slider .slides a {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding: 20px;
+  }
+  header .slider .slides a h1 {
+    width: 200px;
+    font-size: 2rem;
+  }
+  header .slider .slider-control {
+    left: 20px;
+    bottom: 50px;
+  }
+  header .search-bar {
+    width: 95%;
+  }
+  header .search-bar h1 {
+    font-size: 1.5rem;
+  }
+  header .search-bar .s-bottom {
+    gap: 10px;
+    margin-top: 10px;
+  }
+  header .search-bar .s-bottom .search-inp {
+    width: 200px;
+  }
+  .main-books,
+  .shelf-book,
+  .books {
+    padding-inline: 20px;
+  }
+  .main-books .top h1,
+  .shelf-book .top h1,
+  .books .top h1 {
+    font-size: 1.5rem;
+  }
+  .main-books .bottom,
+  .shelf-book .bottom,
+  .books .bottom {
+    gap: 20px;
+  }
+  .main-books .bottom .card,
+  .shelf-book .bottom .card,
+  .books .bottom .card {
+    width: 155px;
+  }
+  .main-books .button,
+  .shelf-book .button,
+  .books .button {
+    display: flex;
+  }
+  .compony-info {
+    padding-inline: 20px;
+  }
+  .compony-info .container {
+    padding: 20px;
+    justify-content: center;
+    background: none;
+  }
+  .yozuvchilar {
+    padding-inline: 20px;
+  }
+  .yozuvchilar .container .top h1 {
+    font-size: 1.5rem;
+  }
+  .yozuvchilar .container .bottom {
+    gap: 20px;
+  }
+  .yozuvchilar .container .bottom .card {
+    width: 155px;
+  }
+  .yozuvchilar .container .button {
+    display: flex;
+  }
+  .contact-us {
+    margin-top: 50px;
+    padding: 20px;
+  }
+  .contact-us .top h1 {
+    font-size: 1.5rem;
+  }
+  .contact-us .bottom {
+    margin-top: 20px;
+  }
+  footer {
+    padding-inline: 20px;
+  }
+  footer .foot-logo {
+    font-size: 1.5rem;
+  }
+  footer p {
+    display: none;
+  }
+  footer .right {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .books .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .books .top select {
+    display: block;
+  }
+  .books .top .category {
+    display: none;
+  }
+}
+@media screen and (max-width: 426px) {
+  .authors {
+    padding-inline: 20px;
+  }
+  .authors .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .authors .top h1 {
+    font-size: 1.5rem;
+  }
+  .authors .top .category {
+    display: none;
+  }
+  .authors .top select {
+    display: block;
+  }
+  .authors .bottom {
+    gap: 20px;
+  }
+  .authors .bottom .card {
+    width: 155px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .signin, .signup {
+    display: block;
+  }
+  .signin .left, .signup .left {
+    display: none;
+  }
+  .signin .right, .signup .right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .book {
+    margin-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 20px;
+  }
+  .book .left {
+    padding: 0;
+  }
+  .book .left .img img {
+    width: 275px;
+  }
+  .book .right {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .book .right .full-info .top .hr {
+    width: 208px;
+  }
+  .book .right .formats .top {
+    text-align: center;
+  }
+  .book .right .formats .bottom {
+    flex-direction: column;
+  }
+  .book .right .formats .bottom .two {
+    margin-top: 20px;
+  }
+  .kitob-haqida {
+    padding-left: 20px;
+  }
+}/*# sourceMappingURL=resposive.css.map */

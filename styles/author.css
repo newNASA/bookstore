@@ -1,0 +1,174 @@
+@import url(../style.css);
+.author {
+  display: flex;
+}
+.author .left .img {
+  width: 582px;
+  height: 779.327px;
+  border-radius: 0px 50px 50px 0px;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+}
+.author .left .img img {
+  width: 100%;
+  height: 100%;
+}
+.author .left .container {
+  width: 100%;
+}
+.author .left .container .author-info {
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 31.5px;
+}
+.author .left .container .author-info .container-left p,
+.author .left .container .author-info .container-right p,
+.author .left .container .author-info .container-center p {
+  color: var(--light-gray);
+  font-family: Visuelt Pro;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 144.4%;
+}
+.author .left .container .author-info .container-left h1,
+.author .left .container .author-info .container-right h1,
+.author .left .container .author-info .container-center h1 {
+  color: var(--cream);
+  font-family: Rotterburg Stylish FREE;
+  font-size: 39px;
+  font-weight: 400;
+  line-height: 144.4%;
+}
+.author .left .container .author-info .container-left span,
+.author .left .container .author-info .container-right span,
+.author .left .container .author-info .container-center span {
+  color: var(--light-gray);
+  font-family: Visuelt Pro;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 144.4%;
+}
+.author .right {
+  padding: 52.66px 88.66px 0 97.78px;
+}
+.author .right h1 {
+  color: var(--cream);
+  font-family: Rotterburg Stylish FREE;
+  font-size: 48px;
+  font-weight: 400;
+}
+.author .right .title {
+  color: var(--author-p);
+  margin-top: 20px;
+  font-family: Steinbeck;
+  font-weight: 400;
+  line-height: 144.4%;
+}
+.author .right .ijodi {
+  margin-top: 31.22px;
+}
+.author .right .ijodi .top {
+  display: flex;
+  align-items: center;
+}
+.author .right .ijodi .top h2 {
+  color: var(--cream);
+  font-family: Rotterburg Stylish FREE;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 9.69px;
+}
+.author .right .ijodi .bottom p {
+  margin-top: 3.64px;
+  width: 400px;
+  color: var(--white);
+  font-family: Steinbeck;
+  font-weight: 400;
+  line-height: 154.9%;
+  margin-left: 23.69px;
+}
+.author .right .asarlari {
+  margin-top: 45px;
+  overflow: hidden;
+}
+.author .right .asarlari .top {
+  display: flex;
+  justify-content: space-between;
+}
+.author .right .asarlari .top h2 {
+  color: var(--cream);
+  font-family: Rotterburg Stylish FREE;
+  font-size: 31px;
+  font-weight: 400;
+}
+.author .right .asarlari .top button {
+  outline: none;
+  border: none;
+  background: transparent;
+  color: var(--white);
+  font-family: Steinbeck;
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.author .right .asarlari .asarlar-notscroll {
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.author .right .asarlari .bottom {
+  width: 704px !important;
+  margin-top: 13px;
+  display: flex;
+  width: 100%;
+  gap: 41.5px;
+  overflow-x: scroll;
+}
+.author .right .asarlari .bottom::-webkit-scrollbar {
+  display: none;
+}
+.author .right .asarlari .bottom .card {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.author .right .asarlari .bottom .card .card-top {
+  width: 164.152px;
+  height: 246.228px;
+}
+.author .right .asarlari .bottom .card .card-top img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+}
+.author .right .asarlari .bottom .card .card-bottom h2 {
+  color: var(--cream);
+  font-family: Rotterburg Stylish FREE;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 17px;
+}
+.author .right .asarlari .bottom .card .card-bottom span {
+  font-family: Visuelt Pro;
+  font-size: 12px;
+  color: var(--light-gray);
+  font-weight: 300;
+  line-height: 144.4%;
+  margin-top: 1.3px;
+}
+.author .right .asarlari .bottom .card .card-bottom div {
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 7px;
+  margin-top: 3.8px;
+}
+.author .right .asarlari .bottom .card .card-bottom div h3 {
+  color: var(--light-gray);
+  font-family: Visuelt Pro;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 144.4%;
+}/*# sourceMappingURL=author.css.map */

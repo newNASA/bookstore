@@ -1,0 +1,102 @@
+@import url(../style.css);
+.shelf-book {
+  padding-inline: 80px;
+  margin-top: 50px;
+}
+.shelf-book .container {
+  box-shadow: 0px 4px 73px 0px rgba(0, 0, 0, 0.25);
+  padding: 38.5px 0 43px 76.5px;
+  border-radius: 15px;
+  display: flex;
+  gap: 75px;
+  background: url(../imgs/profileicon.png) no-repeat right, linear-gradient(-90deg, rgb(47, 47, 47) 6%, rgb(25, 25, 25) 100%);
+}
+.shelf-book .container .left .img {
+  width: 165px;
+  height: 248px;
+  background-size: cover;
+  border-radius: 15px;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+}
+.shelf-book .container .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.shelf-book .container .right h1 {
+  font-family: Rotterburg Stylish FREE;
+  color: var(--cream);
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.shelf-book .container .right .audio-player {
+  width: 400px;
+  margin: 20px;
+}
+.shelf-book .container .right .audio-player audio {
+  display: none;
+}
+.shelf-book .container .right .audio-player .top-audio {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 400px;
+}
+.shelf-book .container .right .audio-player .top-audio #current-time,
+.shelf-book .container .right .audio-player .top-audio #total-time {
+  color: var(--cream) !important;
+  margin-top: 10px;
+  font-family: Rotterburg Stylish FREE;
+}
+.shelf-book .container .right .audio-player .top-audio .progress {
+  width: 400px;
+  height: 10px;
+  background-color: var(--white);
+  border-radius: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.shelf-book .container .right .audio-player .top-audio .progress .progress-bar {
+  border-radius: 10px;
+  width: 0;
+  height: 100%;
+  background-color: var(--cream);
+  transition: width 0.3s ease-in-out;
+}
+.shelf-book .container .right .audio-player .controls {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.shelf-book .container .right .audio-player .controls img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.shelf-book .container .right .audio-player .controls img:first-child {
+  rotate: 180deg;
+}
+.shelf-book .container .right button {
+  padding: 10px 30px;
+  background: var(--cream);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-family: Steinbeck;
+  font-size: 19px;
+  cursor: pointer;
+  margin-top: 30px;
+  color: var(--brown);
+}
+
+.pdf-reader {
+  padding-inline: 80px;
+  margin-top: 50px;
+}
+.pdf-reader iframe {
+  height: 100vh;
+}/*# sourceMappingURL=shelf-book.css.map */

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add</title>
+  <link rel="stylesheet" href="../styles/add.css">
+  <link rel="shortcut icon" href="../imgs/kitob.svg" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="book-img" id="bookImg"></div>
+      <div class="custom-file-input">
+        <label for="fileInput">Rasm Tanlang</label>
+        <input type="file" id="fileInput" onchange="displayImage()">
+      </div>
+    </div>
+    <div class="right">
+      <h1>Kitob Qo'shish</h1>
+      <form action="">
+        <input type="text" placeholder="Sarlavha" required>
+        <input type="number" name="" id="" placeholder="Varaqlar" required>
+        <input type="number" name="" id="" placeholder="Yili" required>
+        <select name="" id="" required>
+          <option value="">Author</option>
+        </select>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Text"></textarea>
+        <input type="submit" value="Yaratish">
+      </form>
+    </div>
+
+    <script src="../Javascript/book.js"></script>
+  </div>
+</body>
+
+</html>

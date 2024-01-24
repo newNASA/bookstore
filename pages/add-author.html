@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add author</title>
+  <link rel="stylesheet" href="../styles/add-author.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="book-img" id="bookImg"></div>
+      <div class="custom-file-input">
+        <label for="fileInput">Rasm Tanlang</label>
+        <input type="file" id="fileInput" onchange="displayImage()">
+      </div>
+    </div>
+    <div class="right">
+      <h1>Yozuvchi Qo'shish</h1>
+      <form action="">
+        <input type="text" placeholder="Ism" required>
+        <input type="text" placeholder="Familiya" required>
+        <label for="">Tug'ilgan kuni</label>
+        <input type="date" name="" id="" required> 
+        <label for="">O'lgan kuni</label>
+        <input type="text" name="" id="" required placeholder="Davlat">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Bio"></textarea>
+        <input type="submit" value="Yaratish">
+      </form>
+    </div>
+
+    <script src="../Javascript/book.js"></script>
+  </div>
+</body>
+
+</html>
