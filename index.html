@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Badiiyat</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./responsive/resposive.css">
+    <link rel="shortcut icon" href="../imgs/kitob.svg" type="image/x-icon">
 </head>
+
 <body>
     <nav class="nav-fixed">
         <div class="nav-logo">
@@ -13,25 +17,76 @@
         </div>
         <ul class="ul-desktop">
             <li><a href="#">Bosh sahifa</a></li>
-            <li><a href="#">Nasr</a></li>
-            <li><a href="#">Kitoblar</a></li>
-            <li><a href="#">Maqolalar</a></li>
-            <li><a href="#">Mualliflar</a></li>
-            <li><a href="#">Forum</a></li>
+            <li onmouseover="subCategoryIn()" onmouseout="subCategoryOut()">
+                <a href="#">Kitoblar</a>
+            </li>
+            <div class="sub-category" onmouseover="subCategoryIn()" onmouseout="subCategoryOut()">
+                <a href="pages/books.html">Jadidlar adabiyoti</a>
+                <a href="pages/books.html">Sovet adabiyoti</a>
+                <a href="pages/books.html">Mustaqillik davri adabiyoti</a>
+                <a href="pages/books.html">Temuriylar davri adabiyoti</a>
+                <a href="pages/books.html">Jahon adabiyoti</a>
+            </div>
+            <li><a href="./pages/authors.html">Yozuvchilar</a></li>
+            <li><a href="./pages/shelf-book.html">Mening Javonim</a></li>
+            <li><a href="#contact-us">Biz bilan bog'lanish</a></li>
         </ul>
-        <div class="profile">
-            <button class="log">Log in</button>
-            <button class="sign">Sign up</button>
-        </div>
         <div class="gamburger-menu"></div>
     </nav>
+    
+    <div class="header-fixer">
+        <div class="top">
+            <div class="clear-btn"></div>
+        </div>
+        <div class="center">
+            <ul class="ul-tablet">
+                <li><a href="#">Bosh sahifa</a></li>
+                <details>
+                    <summary>Kitoblar</summary>
+                    <a href="pages/books.html">Jadidlar adabiyoti</a>
+                    <a href="pages/books.html">Sovet adabiyoti</a>
+                    <a href="pages/books.html">Mustaqillik davri adabiyoti</a>
+                    <a href="pages/books.html">Temuriylar davri adabiyoti</a>
+                    <a href="pages/books.html">Jahon adabiyoti</a>
+                </details>
+                <li><a href="./pages/authors.html">Yozuvchilar</a></li>
+                <li><a href="./pages/shelf-book.html">Mening Javonim</a></li>
+                <li><a href="#contact-us">Biz bilan bog'lanish</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="head-bg"></div>
 
     <header>
-        <div class="slider"></div>
+        <div class="slider">
+            <div class="slides">
+                <a href="./pages/books.html" class="one">
+                    <h1>Temuriylar davri adabiyoti</h1>
+                </a>
+                <a href="./pages/books.html" class="two">
+                    <h1>Jadidlar davri adabiyoti</h1>
+                </a>
+                <a href="./pages/books.html" class="three">
+                    <h1>Sovet davri adabiyoti</h1>
+                </a>
+                <a href="./pages/books.html" class="four">
+                    <h1>Jahon adabiyoti</h1>
+                </a>
+            </div>
+            <div class="slider-control">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+            </div>
+        </div>
+
         <div class="search-bar">
             <h1>Qidirish</h1>
             <div class="s-bottom">
-                <input class="search-inp" placeholder="Adiblar, kitoblar, audiolar, maqolalar..." type="search" required>
+                <input class="search-inp" placeholder="Adiblar, kitoblar, audiolar, maqolalar..." type="search"
+                    required>
                 <button type="submit">Izlash</button>
             </div>
         </div>
@@ -42,16 +97,406 @@
             <h1>Bizning kitoblar</h1>
         </div>
         <div class="bottom">
-            <div class="card">
+            <a href="./pages/book.html" class="card">
                 <div class="card-top">
-                    <img src="./imgs/dunyoning ishlari.png" alt="">
+                    <img src="../imgs/dunyoning ishlari.png" alt="">
                 </div>
                 <div class="card-bottom">
                     <h2>Dunyoning ishlari</h2>
                     <span>O’tkir Hoshimov</span>
+                    <div>
+                        <img src="../imgs/star.svg" alt="">
+                        <h3> <b>4.1</b> • <strong>3400</strong> ta fikrlar</h3>
+                    </div>
                 </div>
+            </a>
+            <a href="./pages/book.html" class="card">
+                <div class="card-top">
+                    <img src="../imgs/dunyoning ishlari.png" alt="">
+                </div>
+                <div class="card-bottom">
+                    <h2>Dunyoning ishlari</h2>
+                    <span>O’tkir Hoshimov</span>
+                    <div>
+                        <img src="../imgs/star.svg" alt="">
+                        <h3> <b>4.1</b> • <strong>3400</strong> ta fikrlar</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="./pages/book.html" class="card">
+                <div class="card-top">
+                    <img src="../imgs/ikki eshik orasi.png" alt="">
+                </div>
+                <div class="card-bottom">
+                    <h2>Ikki eshik orasi</h2>
+                    <span>O’tkir Hoshimov</span>
+                    <div>
+                        <img src="../imgs/star.svg" alt="">
+                        <h3> <b>4.1</b> • <strong>3400</strong> ta fikrlar</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="./pages/book.html" class="card">
+                <div class="card-top">
+                    <img src="../imgs/tushda kechgan umrlar.png" alt="">
+                </div>
+                <div class="card-bottom">
+                    <h2>Tushda kechga umrlar</h2>
+                    <span>O’tkir Hoshimov</span>
+                    <div>
+                        <img src="../imgs/star.svg" alt="">
+                        <h3> <b>4.1</b> • <strong>3400</strong> ta fikrlar</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="./pages/book.html" class="card">
+                <div class="card-top">
+                    <img src="../imgs/ajdarning tavbasi.png" alt="">
+                </div>
+                <div class="card-bottom">
+                    <h2>“Ajdar”ning tavbasi</h2>
+                    <span>O’tkir Hoshimov</span>
+                    <div>
+                        <img src="../imgs/star.svg" alt="">
+                        <h3> <b>4.1</b> • <strong>3400</strong> ta fikrlar</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="./pages/book.html" class="card">
+                <div class="card-top">
+                    <img src="../imgs/ulugbek xazinasi.png" alt="">
+                </div>
+                <div class="card-bottom">
+                    <h2>Ulug’bek Xazinasi</h2>
+                    <span>Odil Yoqubov</span>
+                    <div>
+                        <img src="../imgs/star.svg" alt="">
+                        <h3> <b>4.1</b> • <strong>3400</strong> ta fikrlar</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="./pages/book.html" class="card">
+                <div class="card-top">
+                    <img src="../imgs/ulugbek xazinasi.png" alt="">
+                </div>
+                <div class="card-bottom">
+                    <h2>Ulug’bek Xazinasi</h2>
+                    <span>Odil Yoqubov</span>
+                    <div>
+                        <img src="../imgs/star.svg" alt="">
+                        <h3> <b>4.1</b> • <strong>3400</strong> ta fikrlar</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="./pages/book.html" class="card">
+                <div class="card-top">
+                    <img src="../imgs/ajdodlarimiz fojiasi.png" alt="">
+                </div>
+                <div class="card-bottom">
+                    <h2>Ajdodlarimiz fojiasi</h2>
+                    <span>Mirkarim Osim</span>
+                    <div>
+                        <img src="../imgs/star.svg" alt="">
+                        <h3> <b>4.1</b> • <strong>3400</strong> ta fikrlar</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="./pages/book.html" class="card">
+                <div class="card-top">
+                    <img src="../imgs/ajdodlarimiz fojiasi.png" alt="">
+                </div>
+                <div class="card-bottom">
+                    <h2>Ajdodlarimiz fojiasi</h2>
+                    <span>Mirkarim Osim</span>
+                    <div>
+                        <img src="../imgs/star.svg" alt="">
+                        <h3> <b>4.1</b> • <strong>3400</strong> ta fikrlar</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="./pages/book.html" class="card">
+                <div class="card-top">
+                    <img src="../imgs/yulduzli tunlar.png" alt="">
+                </div>
+                <div class="card-bottom">
+                    <h2>Yulduzli tunlar</h2>
+                    <span>O’tkir Hoshimov</span>
+                    <div>
+                        <img src="../imgs/star.svg" alt="">
+                        <h3> <b>4.1</b> • <strong>3400</strong> ta fikrlar</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="./pages/book.html" class="card">
+                <div class="card-top">
+                    <img src="../imgs/otkan kunlar.png" alt="">
+                </div>
+                <div class="card-bottom">
+                    <h2>O’tkan kunlar</h2>
+                    <span>Abdulla Qodiriy</span>
+                    <div>
+                        <img src="../imgs/star.svg" alt="">
+                        <h3> <b>4.1</b> • <strong>3400</strong> ta fikrlar</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="./pages/book.html" class="card">
+                <div class="card-top">
+                    <img src="../imgs/ruhlar isyoni.png" alt="">
+                </div>
+                <div class="card-bottom">
+                    <h2>Ruhlar isyoni</h2>
+                    <span>Erkin Vohidov</span>
+                    <div>
+                        <img src="../imgs/star.svg" alt="">
+                        <h3> <b>4.1</b> • <strong>3400</strong> ta fikrlar</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="./pages/book.html" class="card card-13">
+                <div class="card-top">
+                    <img src="../imgs/ufk.png" alt="">
+                </div>
+                <div class="card-bottom">
+                    <h2>UFq</h2>
+                    <span>Said Ahmad</span>
+                    <div>
+                        <img src="../imgs/star.svg" alt="">
+                        <h3> <b>4.1</b> • <strong>3400</strong> ta fikrlar</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="./pages/book.html" class="card card-14">
+                <div class="card-top">
+                    <img src="../imgs/ufk.png" alt="">
+                </div>
+                <div class="card-bottom">
+                    <h2>UFq</h2>
+                    <span>Said Ahmad</span>
+                    <div>
+                        <img src="../imgs/star.svg" alt="">
+                        <h3> <b>4.1</b> • <strong>3400</strong> ta fikrlar</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="button">
+            <a href="pages/books.html">Barchasini ko'rish</a>
+        </div>
+    </div>
+
+    <div class="compony-info">
+        <div class="container">
+            <div>
+                <img src="./imgs/pen-nib-svgrepo-com.svg" alt="">
+                <p>Yozuvchilar</p>
+                <h1>252</h1>
+            </div>
+            <div>
+                <img src="./imgs/kitob.svg" alt="">
+                <p>Kitoblar</p>
+                <h1>2000</h1>
+            </div>
+            <div>
+                <img src="./imgs/naushnik.svg" alt="">
+                <p>Audio kitoblar</p>
+                <h1>200</h1>
+            </div>
+            <div>
+                <img src="./imgs/profile.svg" alt="">
+                <p>Kitobxonlar</p>
+                <h1>4500</h1>
             </div>
         </div>
     </div>
+
+    <div class="yozuvchilar">
+        <div class="container">
+            <div class="top">
+                <h1>Bizning Yozuvchilar</h1>
+            </div>
+            <div class="bottom">
+                <a href="./pages/author.html" class="card">
+                    <div class="card-top">
+                        <img src="../imgs/avloniy.png" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="author-info">
+                            <h2>Abdulla Avloniy</h2>
+                            <p>1878-1934</p>
+                        </div>
+                        <div class="card-info">
+                            <div>
+                                <img src="../imgs/kitob.svg" alt="">
+                                <p>34</p>
+                            </div>
+                            <div>
+                                <img src="../imgs/naushnik.svg" alt="">
+                                <p>13</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./pages/author.html" class="card">
+                    <div class="card-top">
+                        <img src="../imgs/avloniy.png" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="author-info">
+                            <h2>Abdulla Avloniy</h2>
+                            <p>1878-1934</p>
+                        </div>
+                        <div class="card-info">
+                            <div>
+                                <img src="../imgs/kitob.svg" alt="">
+                                <p>34</p>
+                            </div>
+                            <div>
+                                <img src="../imgs/naushnik.svg" alt="">
+                                <p>13</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./pages/author.html" class="card">
+                    <div class="card-top">
+                        <img src="../imgs/avloniy.png" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="author-info">
+                            <h2>Abdulla Avloniy</h2>
+                            <p>1878-1934</p>
+                        </div>
+                        <div class="card-info">
+                            <div>
+                                <img src="../imgs/kitob.svg" alt="">
+                                <p>34</p>
+                            </div>
+                            <div>
+                                <img src="../imgs/naushnik.svg" alt="">
+                                <p>13</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./pages/author.html" class="card">
+                    <div class="card-top">
+                        <img src="../imgs/avloniy.png" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="author-info">
+                            <h2>Abdulla Avloniy</h2>
+                            <p>1878-1934</p>
+                        </div>
+                        <div class="card-info">
+                            <div>
+                                <img src="../imgs/kitob.svg" alt="">
+                                <p>34</p>
+                            </div>
+                            <div>
+                                <img src="../imgs/naushnik.svg" alt="">
+                                <p>13</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./pages/author.html" class="card">
+                    <div class="card-top">
+                        <img src="../imgs/avloniy.png" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="author-info">
+                            <h2>Abdulla Avloniy</h2>
+                            <p>1878-1934</p>
+                        </div>
+                        <div class="card-info">
+                            <div>
+                                <img src="../imgs/kitob.svg" alt="">
+                                <p>34</p>
+                            </div>
+                            <div>
+                                <img src="../imgs/naushnik.svg" alt="">
+                                <p>13</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./pages/author.html" class="card">
+                    <div class="card-top">
+                        <img src="../imgs/avloniy.png" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="author-info">
+                            <h2>Abdulla Avloniy</h2>
+                            <p>1878-1934</p>
+                        </div>
+                        <div class="card-info">
+                            <div>
+                                <img src="../imgs/kitob.svg" alt="">
+                                <p>34</p>
+                            </div>
+                            <div>
+                                <img src="../imgs/naushnik.svg" alt="">
+                                <p>13</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="button">
+                <a href="./pages/authors.html">Barchasini ko'rish</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-us" id="contact-us">
+        <div class="top">
+            <h1>Biz bilan aloqa</h1>
+        </div>
+        <div class="bottom">
+            <div class="right">
+                <form>
+                    <input type="text" placeholder="Ism familiyangizni kriting..." required>
+                    <input type="number" placeholder="Telefon raqamingizni kiriting..." required>
+                    <textarea name="" id="" cols="30" rows="10" required placeholder="Izoh qoldiring..."></textarea>
+                    <button type="submit">Jonatish</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot-logo">
+            <a href="#">badiiyat</a>
+        </div>
+
+        <p class="center">
+            Biz bilan bog'lanish | +998 90 781 79 49
+        </p>
+
+        <div class="right">
+            <a href="#" class="logo-con">
+                <img width="40" src="imgs/youtube.svg" alt="">
+                <p>You Tube</p>
+            </a>
+            <a href="#" class="logo-con">
+                <img width="35" src="imgs/Telegram.svg" alt="">
+                <p>Telegram</p>
+            </a>
+            <a href="#" class="logo-con">
+                <img width="35" src="imgs/insta.svg" alt="">
+                <p>Instagram</p>
+            </a>
+            <a href="#" class="logo-con">
+                <img width="40" src="imgs/twitter.svg" alt="">
+                <p>Twitter</p>
+            </a>
+        </div>
+
+    </footer>
+
+    <script src="./script.js"></script>
 </body>
+
 </html>

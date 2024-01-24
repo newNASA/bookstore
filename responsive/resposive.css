@@ -109,27 +109,22 @@
     width: 200px;
   }
   .main-books,
-  .shelf-book,
   .books {
     padding-inline: 20px;
   }
   .main-books .top h1,
-  .shelf-book .top h1,
   .books .top h1 {
     font-size: 1.5rem;
   }
   .main-books .bottom,
-  .shelf-book .bottom,
   .books .bottom {
     gap: 20px;
   }
   .main-books .bottom .card,
-  .shelf-book .bottom .card,
   .books .bottom .card {
     width: 155px;
   }
   .main-books .button,
-  .shelf-book .button,
   .books .button {
     display: flex;
   }
