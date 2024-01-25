@@ -109,24 +109,32 @@
     width: 200px;
   }
   .main-books,
+  .shelf-book,
   .books {
-    padding-inline: 20px;
+    padding-inline: 25px !important;
   }
   .main-books .top h1,
+  .shelf-book .top h1,
   .books .top h1 {
     font-size: 1.5rem;
   }
   .main-books .bottom,
+  .shelf-book .bottom,
   .books .bottom {
-    gap: 20px;
+    gap: 10px;
   }
   .main-books .bottom .card,
+  .shelf-book .bottom .card,
   .books .bottom .card {
     width: 155px;
   }
   .main-books .button,
+  .shelf-book .button,
   .books .button {
     display: flex;
+  }
+  .comment .container {
+    width: 350px !important;
   }
   .compony-info {
     padding-inline: 20px;

@@ -158,8 +158,9 @@
   }
 
   .main-books,
+  .shelf-book,
   .books {
-    padding-inline: 20px;
+    padding-inline: 25px !important;
 
     .top {
       h1 {
@@ -168,7 +169,7 @@
     }
 
     .bottom {
-      gap: 20px;
+      gap: 10px;
 
       .card {
         width: 155px;
@@ -176,6 +177,12 @@
     }
     .button{
       display: flex;
+    }
+  }
+
+  .comment{
+    .container{
+      width: 350px !important;
     }
   }
   .compony-info{

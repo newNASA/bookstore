@@ -526,11 +526,19 @@ header .search-bar .s-bottom button {
 }
 
 .main-books,
+.shelf-book,
 .books {
   margin-top: 30px;
-  padding: 0 120px;
+  padding-inline: 120px;
+  width: 100%;
+}
+.main-books .top,
+.shelf-book .top,
+.books .top {
+  width: 100%;
 }
 .main-books .top h1,
+.shelf-book .top h1,
 .books .top h1 {
   font-family: Rotterburg Stylish FREE;
   color: var(--cream);
@@ -540,7 +548,9 @@ header .search-bar .s-bottom button {
           user-select: none;
 }
 .main-books .bottom,
+.shelf-book .bottom,
 .books .bottom {
+  width: 100%;
   margin-top: 50px;
   display: flex;
   gap: 35px;
@@ -548,32 +558,20 @@ header .search-bar .s-bottom button {
   justify-content: center;
 }
 .main-books .bottom .card,
+.shelf-book .bottom .card,
 .books .bottom .card {
   width: 170px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.main-books .bottom .card .payment,
-.books .bottom .card .payment {
-  padding: 10px 25px;
-  width: 100%;
-  border-radius: 40px;
-  margin: 10px 0;
-  transition: 0.5s;
-  border-radius: 15px;
-  background: #C9AC8C;
-  color: var(--brown);
-  font-family: Steinbeck;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-}
 .main-books .bottom .card .card-top,
+.shelf-book .bottom .card .card-top,
 .books .bottom .card .card-top {
   width: 164.152px;
 }
 .main-books .bottom .card .card-top img,
+.shelf-book .bottom .card .card-top img,
 .books .bottom .card .card-top img {
   width: 100%;
   height: 100%;
@@ -581,6 +579,7 @@ header .search-bar .s-bottom button {
   background: url(<path-to-image>), lightgray 50%/cover no-repeat;
 }
 .main-books .bottom .card .card-bottom h2,
+.shelf-book .bottom .card .card-bottom h2,
 .books .bottom .card .card-bottom h2 {
   color: var(--cream);
   font-family: Rotterburg Stylish FREE;
@@ -589,6 +588,7 @@ header .search-bar .s-bottom button {
   margin-top: 17px;
 }
 .main-books .bottom .card .card-bottom span,
+.shelf-book .bottom .card .card-bottom span,
 .books .bottom .card .card-bottom span {
   font-family: Visuelt Pro;
   font-size: 12px;
@@ -598,6 +598,7 @@ header .search-bar .s-bottom button {
   margin-top: 1.3px;
 }
 .main-books .bottom .card .card-bottom div,
+.shelf-book .bottom .card .card-bottom div,
 .books .bottom .card .card-bottom div {
   display: inline-flex;
   justify-content: center;
@@ -606,6 +607,7 @@ header .search-bar .s-bottom button {
   margin-top: 3.8px;
 }
 .main-books .bottom .card .card-bottom div h3,
+.shelf-book .bottom .card .card-bottom div h3,
 .books .bottom .card .card-bottom div h3 {
   color: var(--light-gray);
   font-family: Visuelt Pro;
@@ -614,6 +616,7 @@ header .search-bar .s-bottom button {
   line-height: 144.4%;
 }
 .main-books .button,
+.shelf-book .button,
 .books .button {
   width: 100%;
   display: none;
@@ -621,6 +624,7 @@ header .search-bar .s-bottom button {
   justify-content: center;
 }
 .main-books .button a,
+.shelf-book .button a,
 .books .button a {
   color: var(--brown);
   padding: 10px 30px;
@@ -1099,6 +1103,32 @@ footer .right .logo-con img {
 }
 .signin .right form button a {
   color: var(--white) !important;
+}
+
+.shelf-book .bottom .card .control {
+  width: 100%;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+}
+.shelf-book .bottom .card .control .payment {
+  padding: 10px 20px;
+  border-radius: 40px;
+  margin: 10px 0;
+  transition: 0.5s;
+  border-radius: 15px;
+  background: var(--cream);
+  color: var(--brown);
+  font-family: Steinbeck;
+  font-weight: 400;
+  text-align: center;
+}
+.shelf-book .bottom .card .control .trash {
+  padding: 7px;
+  background: var(--red);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes signup {

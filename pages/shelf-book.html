@@ -6,12 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shelf book</title>
   <link rel="shortcut icon" href="../imgs/kitob.svg" type="image/x-icon">
-  <link rel="stylesheet" href="../styles/shelf-book.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../responsive/resposive.css">
+  <link rel="stylesheet" href="../styles/book.css">
 </head>
 
 <body>  
 
-  <div class="books">
+  <div class="comment">
+    <div class="container">
+      <div class="top">
+        <h2>Kitob Sotib Olish</h2>
+        <img src="../imgs/close-button-svgrepo-com.svg" alt="" width="20" height="20" onclick="comment('close-nocomment')">
+      </div>
+      <div class="bottom">
+        <form action="">
+          <input type="text" placeholder="Ism, Familiya" required>
+          <input type="number" placeholder="Telefon Raqam" required>
+          <input type="submit" value="Jo'natish" onclick="comment('close')">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="shelf-book">
     <div class="top">
       <h1>Mening Javonim</h1>
     </div>
@@ -30,7 +48,10 @@
             </div>
           </div>
         </a>  
-        <a href="#" class="payment">Sotib Olish</a>
+        <div class="control">
+          <a href="#" class="payment" onclick="comment('open')">Sotib Olish</a>
+          <a href="#" class="trash"><img src="../imgs/trash-svgrepo-com.svg" width="24"></a>
+        </div>  
       </div>
       <div class="card">
         <a href="../pages/book.html">
@@ -242,6 +263,8 @@
       </div>
     </div>
   </div>
+
+  <script src="../Javascript/book.js"></script>
 
 </body>
 

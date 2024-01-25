@@ -570,11 +570,14 @@ header {
 }
 
 .main-books,
+.shelf-book,
 .books {
     margin-top: 30px;
-    padding: 0 120px;
+    padding-inline: 120px;
+    width: 100%;
 
     .top {
+        width: 100%;
         h1 {
             font-family: Rotterburg Stylish FREE;
             color: var(--cream);
@@ -584,6 +587,7 @@ header {
     }
 
     .bottom {
+        width: 100%;
         margin-top: 50px;
         display: flex;
         gap: 35px;
@@ -595,21 +599,6 @@ header {
             display: flex;
             flex-direction: column;
             align-items: center;
-
-            .payment{
-                padding: 10px 25px;
-                width: 100%;
-                border-radius: 40px;
-                margin: 10px 0;
-                transition: 0.5s;
-                border-radius: 15px;
-                background: #C9AC8C;
-                color: var(--brown);
-                font-family: Steinbeck;
-                font-size: 16px;
-                font-weight: 400;
-                text-align: center;
-            }
 
             .card-top {
                 width: 164.152px;
@@ -1187,6 +1176,39 @@ footer {
                 cursor: pointer;
                 a{
                     color: var(--white) !important;
+                }
+            }
+        }
+    }
+}
+
+.shelf-book{
+    .bottom{
+        .card{
+            .control{
+                width: 100%;
+                display: flex;
+                justify-content: space-between !important;
+                align-items: center;
+                .payment{
+                    padding: 10px 20px;
+                    border-radius: 40px;
+                    margin: 10px 0;
+                    transition: 0.5s;
+                    border-radius: 15px;
+                    background: var(--cream);
+                    color: var(--brown);
+                    font-family: Steinbeck;
+                    font-weight: 400;
+                    text-align: center;
+                }
+                .trash{
+                    padding: 7px;
+                    background:var(--red);
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    
                 }
             }
         }
