@@ -160,7 +160,7 @@
   .main-books,
   .shelf-book,
   .books {
-    padding-inline: 0px !important;
+    padding-inline: 40px !important;
 
     .top {
       h1 {
@@ -256,7 +256,7 @@
 
 @media screen and (max-width: 426px) {
   .authors{
-    padding-inline: 20px;
+    padding-inline: 40px;
     .top{
       display: flex;
       justify-content: space-between;

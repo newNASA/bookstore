@@ -111,7 +111,7 @@
   .main-books,
   .shelf-book,
   .books {
-    padding-inline: 0px !important;
+    padding-inline: 40px !important;
   }
   .main-books .top h1,
   .shelf-book .top h1,
@@ -197,7 +197,7 @@
 }
 @media screen and (max-width: 426px) {
   .authors {
-    padding-inline: 20px;
+    padding-inline: 40px;
   }
   .authors .top {
     display: flex;
