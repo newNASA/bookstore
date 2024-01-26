@@ -318,6 +318,9 @@
             width: 208px;
           }
         }
+        .bottom{
+          text-align: justify;
+        }
       }
       .formats{
         .top{
@@ -399,6 +402,12 @@
       align-items: center;  
       h1{
         font-size: 2.5rem;
+      }
+      .title{
+        text-align: justify;
+      }
+      .ijodi{
+        text-align: justify;
       }
       .asarlari{
         width: 100%;

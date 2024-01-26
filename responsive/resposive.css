@@ -254,6 +254,9 @@
   .book .right .full-info .top .hr {
     width: 208px;
   }
+  .book .right .full-info .bottom {
+    text-align: justify;
+  }
   .book .right .formats .top {
     text-align: center;
   }
@@ -323,6 +326,12 @@
   }
   .author .right h1 {
     font-size: 2.5rem;
+  }
+  .author .right .title {
+    text-align: justify;
+  }
+  .author .right .ijodi {
+    text-align: justify;
   }
   .author .right .asarlari {
     width: 100%;
