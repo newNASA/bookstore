@@ -266,4 +266,23 @@
   .kitob-haqida {
     padding-left: 20px;
   }
+  .kitob-haqida .top {
+    padding-right: 0;
+    justify-content: center;
+  }
+  .kitob-haqida .bottom .iqtibos .card {
+    min-width: 500px;
+  }
+  .kitob-tavsiya .top {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+  }
+  .kitob-tavsiya .top button {
+    display: none;
+  }
+  .kitob-tavsiya .bottom {
+    padding-left: 20px;
+    gap: 20px;
+  }
 }/*# sourceMappingURL=resposive.css.map */
