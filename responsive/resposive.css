@@ -111,7 +111,7 @@
   .main-books,
   .shelf-book,
   .books {
-    padding-inline: 25px !important;
+    padding-inline: 0px !important;
   }
   .main-books .top h1,
   .shelf-book .top h1,
@@ -121,12 +121,12 @@
   .main-books .bottom,
   .shelf-book .bottom,
   .books .bottom {
-    gap: 10px;
+    gap: 50px;
   }
   .main-books .bottom .card,
   .shelf-book .bottom .card,
   .books .bottom .card {
-    width: 155px;
+    width: 140px;
   }
   .main-books .button,
   .shelf-book .button,

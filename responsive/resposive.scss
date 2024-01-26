@@ -160,7 +160,7 @@
   .main-books,
   .shelf-book,
   .books {
-    padding-inline: 25px !important;
+    padding-inline: 0px !important;
 
     .top {
       h1 {
@@ -169,10 +169,10 @@
     }
 
     .bottom {
-      gap: 10px;
+      gap: 50px;
 
       .card {
-        width: 155px;
+        width: 140px;
       }
     }
     .button{
