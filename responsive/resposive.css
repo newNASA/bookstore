@@ -303,7 +303,7 @@
     justify-content: center;
   }
   .author .left .img img {
-    border-radius: 50px;
+    border-radius: 20px;
     width: 275px;
     height: 428px;
   }
@@ -315,6 +315,22 @@
     padding: 20px;
   }
   .author .right {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .author .right h1 {
+    font-size: 2.5rem;
+  }
+  .author .right .asarlari {
+    width: 100%;
+  }
+  .author .right .asarlari .top button {
     display: none;
+  }
+  .author .right .asarlari .bottom {
+    width: 100%;
   }
 }/*# sourceMappingURL=resposive.css.map */
