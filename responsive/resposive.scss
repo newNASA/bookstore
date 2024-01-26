@@ -362,4 +362,37 @@
       gap: 20px;
     }
   }
+
+  .author{
+    flex-direction: column;
+    padding-inline: 20px;
+    margin-top: 30px;
+    .left{
+      width: 100%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      .img{
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        img{
+          border-radius: 50px;
+          width: 275px;
+          height: 428px;
+        }
+      }
+      .container{
+        display: flex;
+        justify-content: center;
+        .author-info{
+          padding: 20px;
+        }
+      }
+    }
+    .right{
+      display: none;
+    }
+  }
 }

@@ -285,4 +285,36 @@
     padding-left: 20px;
     gap: 20px;
   }
+  .author {
+    flex-direction: column;
+    padding-inline: 20px;
+    margin-top: 30px;
+  }
+  .author .left {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .author .left .img {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+  }
+  .author .left .img img {
+    border-radius: 50px;
+    width: 275px;
+    height: 428px;
+  }
+  .author .left .container {
+    display: flex;
+    justify-content: center;
+  }
+  .author .left .container .author-info {
+    padding: 20px;
+  }
+  .author .right {
+    display: none;
+  }
 }/*# sourceMappingURL=resposive.css.map */
